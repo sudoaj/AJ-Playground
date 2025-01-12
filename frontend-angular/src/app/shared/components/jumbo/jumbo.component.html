@@ -6,40 +6,70 @@
           Hi, I'm <span class="text-gradient">AJ</span>
         </h1>
         <p class="fs-4 mt-3">Welcome to my playground</p>
-        <button class="btn btn-primary btn-lg mt-4">Explore</button>
+        <button class="btn btn-primary btn-lg explore-button mt-4">Explore</button>
       </div>
   
-      <!-- Right Section -->
-      <div class="col-md-6 position-relative">
-        <!-- Profile Image -->
-        <img src="path/to/profile-image.jpg" alt="AJ" class="img-fluid rounded-circle shadow-lg mb-4" style="max-width: 300px;">
-  
-        <!-- Thought Bubble -->
-        <div class="thought-bubble position-absolute" style="top: 0; right: 0;">
-          <div class="bubble-text bg-white text-dark rounded p-3 shadow">
-            <p class="mb-0">
-              Prolific programmers precisely parse pioneering paradigms, pragmatically producing personalized platform perfection.
-            </p>
+      <!-- Right Section: Middle and Chat -->
+      <div class="col-md-6">
+        <div class="row">
+          <!-- Middle Section -->
+          <div class="col-12 position-relative mb-4">
+            <!-- Profile Image -->
+            <img src="assets/images/me.png" alt="AJ" class="img-fluid rounded-circle shadow-lg" style="max-width: 300px;">
+        
+            <!-- Thought Bubble -->
+            <div class="thought-bubble position-absolute" style="top: 0; right: 0;">
+              <div class="bubble-text bg-white text-dark rounded p-3 shadow">
+                <p class="mb-0">
+                    CODE, SLEEP, EAT(SOMETIMES), REPEAT
+                </p>
+              </div>
+              <!-- Small connecting dots -->
+              <div class="bubble-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
           </div>
-          <!-- Small connecting dots -->
-          <div class="bubble-dots">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
   
-        <!-- Chat Section -->
-        <div class="chat-section bg-dark text-white rounded p-4 mt-4 shadow">
-          <h4 class="fw-bold">AJ-GPT</h4>
-          <p>How many projects are here?</p>
-          <p>Tell me more about a random project?</p>
-          <p>What languages is project A running in?</p>
-          <div class="input-group mt-3">
-            <input type="text" class="form-control" placeholder="What can I do in the playground?" />
-            <button class="btn btn-primary" type="button">
-              <i class="bi bi-send"></i>
-            </button>
+          <!-- Chat Section -->
+          <div class="col-12">
+            <div class="chat-section bg-dark text-white rounded p-4 shadow">
+              <h4 class="fw-bold mb-3">AJ-GPT</h4>
+        
+              <!-- Chat Messages -->
+              <div class="chat-messages mb-4">
+                <p class="chat-message">How many projects are here?</p>
+                <p class="chat-message">Tell me more about a random project?</p>
+                <p class="chat-message">What languages is project A running in?</p>
+              </div>
+        
+              <!-- Input Section -->
+              <div class="input-group chat-input">
+                <!-- Image Upload -->
+                <button class="btn btn-secondary">
+                  <i class="bi bi-image"></i>
+                </button>
+                <!-- Model Change -->
+                <select class="form-select model-select">
+                  <option selected>Default Model</option>
+                  <option value="1">Model A</option>
+                  <option value="2">Model B</option>
+                </select>
+        
+                <!-- Text Input -->
+                <input type="text" class="form-control" placeholder="Type your message..." />
+                <!-- Microphone -->
+                <button class="btn btn-secondary">
+                  <i class="bi bi-mic"></i>
+                </button>
+                <!-- Send Button -->
+                <button class="btn btn-primary">
+                  <i class="bi bi-send"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

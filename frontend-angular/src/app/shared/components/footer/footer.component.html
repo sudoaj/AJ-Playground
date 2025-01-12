@@ -1,39 +1,73 @@
-<footer class="nga-footer position-fixed bottom-0 w-100">
-    <div class="container py-5 text-center text-lg-start">
-      <div class="row">
-        <div class="col-12 col-lg-5 mb-3">
-          <h2 class="h5">
-            <!-- <img class="mb-1 me-1" [src]="'./assets/params/images/logo/' + appInfo.logo + '-logo.png'"
-              [srcset]="'./assets/params/images/logo/' + appInfo.logo + '-logo.png, ./assets/params/images/logo/' + appInfo.logo + '-logo@2x.png 2x'"
-              width="25" height="25" [alt]="'Logo ' + appInfo.name"> -->
-            {{ appInfo.name }}
-          </h2>
-          <hr class="text-white mb-4 mt-0 d-inline-block" style="width: 120px;">
-          <div>
-            <a type="button" class="nga-btn-social nga-btn-linkedin"
-              [href]="'https://www.linkedin.com/in/' + appInfo.network" [attr.aria-label]="'Linkedin ' + appInfo.name">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a type="button" class="nga-btn-social nga-btn-twitter" [href]="'https://twitter.com/' + appInfo.network"
-              [attr.aria-label]="'Twitter ' + appInfo.name">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a type="button" class="nga-btn-social nga-btn-github" [href]="'https://github.com/' + appInfo.network"
-              [attr.aria-label]="'Github ' + appInfo.name">
-              <i class="fab fa-github"></i>
-            </a>
-            <a type="button" class="nga-btn-social nga-btn-gitlab" [href]="'https://gitlab.com/' + appInfo.network"
-              [attr.aria-label]="'Gitlab ' + appInfo.name">
-              <i class="fab fa-gitlab"></i>
-            </a>
-          </div>
+<footer class="nga-footer bottom-0 w-100">
+  <div class="container py-5 text-center text-lg-start">
+    <div class="row">
+      <!-- Code Section -->
+      <div class="col-12 col-lg-4 mb-3">
+        <h2 class="h5">Technologies</h2>
+        <hr class="text-white mb-4 mt-0 d-inline-block" style="width: 120px;">
+        <div class="d-flex flex-wrap gap-3">
+          <!-- Python -->
+          <a type="button" class="nga-btn-social nga-btn-python text-decoration-none text-white"
+            [href]="'https://www.python.org/'" [attr.aria-label]="'Python'">
+            <i class="bi bi-file-code-fill"></i> Python
+          </a>
+          <!-- TypeScript -->
+          <a type="button" class="nga-btn-social nga-btn-typescript text-decoration-none text-white"
+            [href]="'https://www.typescriptlang.org/'" [attr.aria-label]="'TypeScript'">
+            <i class="bi bi-code-square"></i> TypeScript
+          </a>
+          <!-- Docker -->
+          <a type="button" class="nga-btn-social nga-btn-docker text-decoration-none text-white"
+            [href]="'https://www.docker.com/'" [attr.aria-label]="'Docker'">
+            <i class="bi bi-box-seam"></i> Docker
+          </a>
+          <!-- AWS -->
+          <a type="button" class="nga-btn-social nga-btn-aws text-decoration-none text-white"
+            [href]="'https://aws.amazon.com/'" [attr.aria-label]="'AWS'">
+            <i class="bi bi-cloud-fill"></i> AWS
+          </a>
+          <!-- Code -->
+          <a type="button" class="nga-btn-social nga-btn-code text-decoration-none text-white"
+            [href]="'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide'" [attr.aria-label]="'Code'">
+            <i class="bi bi-braces"></i> Code
+          </a>
         </div>
+      </div>
 
+      <!-- Projects Section -->
+      <div class="col-12 col-lg-4 mb-3">
+        <h2 class="h5">Projects</h2>
+        <hr class="text-white mb-4 mt-0 d-inline-block" style="width: 120px;">
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-white">Project A</a></li>
+          <li><a href="#" class="text-decoration-none text-white">Project B</a></li>
+          <li><a href="#" class="text-decoration-none text-white">Project C</a></li>
+          <li><a href="#" class="text-decoration-none text-white">Project D</a></li>
+        </ul>
+      </div>
+
+      <!-- Companies Section -->
+      <div class="col-12 col-lg-4 mb-3">
+        <h2 class="h5">Companies</h2>
+        <hr class="text-white mb-4 mt-0 d-inline-block" style="width: 120px;">
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-white">Company A</a></li>
+          <li><a href="#" class="text-decoration-none text-white">Company B</a></li>
+          <li><a href="#" class="text-decoration-none text-white">Company C</a></li>
+          <li><a href="#" class="text-decoration-none text-white">Company D</a></li>
+        </ul>
       </div>
     </div>
-    <div class="py-3 text-center" style="background-color: black;">
-      <div class="container">
-        <a [href]="'https://' + appInfo.website">{{ appInfo.website }}</a>
-      </div>
+  </div>
+
+  <div class="py-3 text-center" style="background-color: black;">
+    <div class="container text-white">
+      <p class="mb-2">
+        &copy; {{ currentYear }} {{ appInfo.name }}. All rights reserved.
+      </p>
+      <a [href]="'https://' + appInfo.website" class="text-decoration-none text-white">
+        {{ appInfo.website }}
+      </a>
     </div>
-  </footer>
+  </div>
+</footer>
