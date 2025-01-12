@@ -1,0 +1,56 @@
+#blog-section {
+    background-color: #000;
+    padding: 50px 20px;
+    border-radius: 15px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  .blog-card {
+    height: 300px;
+    position: relative;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .blog-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+  }
+  
+  .blog-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .blog-date {
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+  }
+  
+  .pagination-controls {
+    text-align: center;
+  }
+  
+  .pagination-controls .btn {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  
+  .pagination-controls .btn i {
+    margin: 0;
+  }

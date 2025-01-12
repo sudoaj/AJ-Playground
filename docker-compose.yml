@@ -1,18 +1,9 @@
-version: '3.8'
-
 services:
-    angular:
-        build: ./frontend-angular
-        container_name: angular
-        ports:
-            - "80:80"
-        depends_on:
-            - django
     django:
-        build: ./backend-django
-        container_name: django
-        command: python manage.py runserver 0.0.0.0:8000
-        volumes:
-            - ./backend-django/:/usr/src/app/
+        build: 
+            context: ./backend-django
+            dockerfile: Dockerfile
         ports:
             - "8000:8000"
+        volumes:
+            - ./backend-django:/usr/src/app

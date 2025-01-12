@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  appInfo = {
+    name: 'AJ-Playground.org',
+    logo: 'angular',
+    network: 'AJ-Playground.org',
+    website: 'https://aj-playground.org'
+  }
+
 }

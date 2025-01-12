@@ -1,0 +1,67 @@
+#jumbo-section {
+    width: 100vw ; /* Full width of the viewport */
+    background-color: #000 !important;
+    padding: 50px 20px;
+    margin: auto;
+  }
+  
+  .text-gradient {
+    background: linear-gradient(to right, #005bea, #00c6fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .thought-bubble {
+    position: absolute;
+    max-width: 250px;
+    right: -30px;
+    top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bubble-text {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bubble-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .bubble-dots .dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 4px;
+  }
+  
+  .chat-section {
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .input-group input {
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .input-group button {
+    border-radius: 0 8px 8px 0;
+  }
