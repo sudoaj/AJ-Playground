@@ -31,5 +31,5 @@ EXPOSE 8000
 
 # Serve the app
 # CMD [ "python", "manage.py", "runserver", "0.0.0.0:8000" ]
-CMD ["sh", "-c", "cd playground &&pwd && ls && python manage.py runserver 0.0.0.0:8000"]
+CMD ["sh", "-c", "pwd && ls && python manage.py runserver 0.0.0.0:8000"]
 
