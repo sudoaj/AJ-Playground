@@ -1,0 +1,62 @@
+/* Shared Styles */
+.border-radius {
+    border-radius: 15px;
+}
+
+/* Section Styling */
+#github-section {
+    background-color: #121212;
+    padding: 50px 20px;
+    border-radius: 15px;
+}
+
+.github-table {
+    background-color: #1c1c1c;
+    padding: 20px;
+}
+
+table td {
+    vertical-align: middle;
+    padding: 10px;
+}
+
+table td:first-child {
+    width: 15%; /* Consider using flexbox or grid for better responsiveness */
+}
+
+table td:nth-child(2) {
+    width: 40%;
+}
+
+table td:nth-child(3),
+table td:nth-child(4) {
+    width: 20%;
+}
+
+table .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Stats Section */
+.github-stats {
+    background: linear-gradient(to right, #005bea, #00c6fb);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.github-stats div {
+    text-align: center;
+}
+
+.github-stats h4 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.github-stats p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+}

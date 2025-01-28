@@ -1,0 +1,76 @@
+#jumbo-section {
+    width: 100%; /* Use full width of the container */
+    max-width: 1200px; /* Limit the maximum width for larger screens */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 50px 20px; /* Maintain consistent padding */
+    background-color: #000;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #005bea, #00c6fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.thought-bubble {
+    position: absolute;
+    max-width: 250px;
+    right: -30px;
+    top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bubble-text {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.explore-button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #005bea;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #004bbd;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    #jumbo-section {
+        padding: 30px 15px; /* Reduce padding for smaller screens */
+    }
+
+    .thought-bubble {
+        right: 0; /* Adjust position of the bubble */
+        top: 10px;
+    }
+
+    .explore-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}

@@ -1,24 +1,45 @@
-<! DOCTYPE html >
-<html  lang = " en " >
-<head >
-    <meta  charset = " UTF-8 " >
-    <meta  name = " viewport "  content = " width=device-width, initial-scale=1.0 " >
-    <title>  AJ Playground </title >
-</head >
+{% extends "base.html" %}
+{% load static %}
 
-<body >
-    <header >
-        <nav >
-            <a  href = " / " > Home </a >
-        </nav >
-    </header >
 
-    <main >
-        <h1> Welcome to AJ's Playground </h1 >
-        <p> This is a place where I can experiment with different technologies and frameworks. </p >
-    </main >
+{% block title %}Playground 2.0 - Home{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'frontend/css/main.css' %}">
+<link rel="stylesheet" href="{% static 'frontend/css/jumbo.css' %}">
+<link rel="stylesheet" href="{% static 'frontend/css/github.css'%}">
+<link rel="stylesheet" href="{% static 'frontend/css/blog.css'%}">
+<link rel="stylesheet" href="{% static 'frontend/css/follow.css'%}">
+{% endblock %}
 
-    <footer >
-        <p> &copy; 2025 AJ's Playground. All rights reserved. </p >
-    </footer >
-</body >
+{% block header %}
+<header>
+    <div class="text-center py-5">
+        <h1>Welcome to Playground 2.0</h1>
+        <p>Explore, innovate, and grow with us.</p>
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <!-- Jumbo Section -->
+    <section id="jumbo-section" class="mb-5">
+        {% include "frontend/jumbo.html" %}
+    </section>
+
+    <!-- GitHub Section -->
+    <section id="github-section" class="mb-5">
+        {% include "frontend/github.html" %}
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog-section" class="mb-5">
+        {% include "frontend/blog.html" %}
+    </section>
+
+    <!-- Follow Section -->
+    <section id="follow-section">
+        {% include "frontend/follow.html" %}
+    </section>
+</div>
+{% endblock %}

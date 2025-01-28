@@ -1,0 +1,490 @@
+==== Content of: ./frontend/static/frontend/css/github.css ====
+/* Section Styling */
+#github-section {
+    background-color: #121212;
+    padding: 50px 20px;
+    border-radius: 15px;
+  }
+  
+  .github-table {
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  table td {
+    vertical-align: middle;
+    padding: 10px;
+  }
+  
+  table td:first-child {
+    width: 15%;
+  }
+  
+  table td:nth-child(2) {
+    width: 40%;
+  }
+  
+  table td:nth-child(3),
+  table td:nth-child(4) {
+    width: 20%;
+  }
+  
+  table .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  /* Stats Section */
+  .github-stats {
+    background: linear-gradient(to right, #005bea, #00c6fb);
+    border-radius: 15px;
+    padding: 15px;
+  }
+  
+  .github-stats div {
+    text-align: center;
+  }
+  
+  .github-stats h4 {
+    font-size: 1.8rem;
+    color: #fff;
+  }
+  
+  .github-stats p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+  }
+==== Content of: ./frontend/static/frontend/css/jumbo.css ====
+#jumbo-section {
+    width: 100vw ; /* Full width of the viewport */
+    background-color: #000 !important;
+    padding: 50px 20px ;
+    margin: auto;
+  }
+  
+  .text-gradient {
+    background: linear-gradient(to right, #005bea, #00c6fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .thought-bubble {
+    position: absolute;
+    max-width: 250px;
+    right: -30px;
+    top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bubble-text {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bubble-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .bubble-dots .dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 4px;
+  }
+  .explore-button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .explore-button:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+
+
+  /* Chat Section */
+.chat-section {
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 50px 50px 0 0 !important; /* Round only the top-left and top-right corners */
+    padding: 50px !important;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-top: auto; /* Automatically sticks to the last content above it */
+    border: 1px solid #444; /* Subtle border for visual separation */
+  }
+  
+  /* Chat Messages */
+  .chat-messages {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    padding-right: 10px;
+  }
+  
+  .chat-message {
+    margin-bottom: 10px;
+    background-color: #2a2a2a;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #ddd;
+  }
+  
+  /* Input Section */
+  .chat-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .chat-input .form-control,
+  .model-select {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .chat-input .form-control {
+    flex-grow: 1;
+  }
+  
+  .chat-input .form-control:focus,
+  .model-select:focus {
+    outline: none;
+    border: 1px solid #005bea;
+    box-shadow: 0 0 5px rgba(0, 94, 186, 0.5);
+  }
+  
+  /* Buttons */
+  .chat-input .btn-secondary,
+  .chat-input .btn-primary {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s, background 0.2s;
+  }
+  
+  .chat-input .btn-secondary {
+    background-color: #333;
+    color: white;
+  }
+  
+  .chat-input .btn-secondary:hover {
+    background-color: #444;
+  }
+  
+  .chat-input .btn-primary {
+    background: linear-gradient(to right, #005bea, #00c6fb);
+    color: white;
+  }
+  
+  .chat-input .btn-primary:hover {
+    background: linear-gradient(to right, #004bb5, #0082e6);
+  }
+  
+  /* Thought Bubble */
+  .thought-bubble {
+    right: 30%; /* Adjust as per requirement */
+  }
+
+==== Content of: ./frontend/static/frontend/css/main.css ====
+
+main{
+    width: 100vw; /* Full width of the viewport */
+  }
+  :host {
+    --bright-blue: oklch(51.01% 0.274 263.83);
+    --electric-violet: oklch(53.18% 0.28 296.97);
+    --french-violet: oklch(47.66% 0.246 305.88);
+    --vivid-pink: oklch(69.02% 0.277 332.77);
+    --hot-red: oklch(61.42% 0.238 15.34);
+    --orange-red: oklch(63.32% 0.24 31.68);
+
+    --gray-900: oklch(19.37% 0.006 300.98);
+    --gray-700: oklch(36.98% 0.014 302.71);
+    --gray-400: oklch(70.9% 0.015 304.04);
+
+    --red-to-pink-to-purple-vertical-gradient: linear-gradient(
+      180deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
+
+    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
+      90deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
+
+    --pill-accent: var(--bright-blue);
+
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    font-size: 3.125rem;
+    color: var(--gray-900);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.125rem;
+    margin: 0;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+  }
+
+  p {
+    margin: 0;
+    color: var(--gray-700);
+  }
+
+  main {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: inherit;
+    position: relative;
+  }
+
+  .angular-logo {
+    max-width: 9.2rem;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 3rem;
+  }
+
+  .content h1 {
+    margin-top: 1.75rem;
+  }
+
+  .content p {
+    margin-top: 1.5rem;
+  }
+
+  .divider {
+    width: 1px;
+    background: var(--red-to-pink-to-purple-vertical-gradient);
+    margin-inline: 0.5rem;
+  }
+
+  .pill-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .pill {
+    display: flex;
+    align-items: center;
+    --pill-accent: var(--bright-blue);
+    background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
+    color: var(--pill-accent);
+    padding-inline: 0.75rem;
+    padding-block: 0.375rem;
+    border-radius: 2.75rem;
+    border: 0;
+    transition: background 0.3s ease;
+    font-family: var(--inter-font);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4rem;
+    letter-spacing: -0.00875rem;
+    text-decoration: none;
+  }
+
+  .pill:hover {
+    background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
+  }
+
+  .pill-group .pill:nth-child(6n + 1) {
+    --pill-accent: var(--bright-blue);
+  }
+  .pill-group .pill:nth-child(6n + 2) {
+    --pill-accent: var(--french-violet);
+  }
+  .pill-group .pill:nth-child(6n + 3),
+  .pill-group .pill:nth-child(6n + 4),
+  .pill-group .pill:nth-child(6n + 5) {
+    --pill-accent: var(--hot-red);
+  }
+
+  .pill-group svg {
+    margin-inline-start: 0.25rem;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.73rem;
+    margin-top: 1.5rem;
+  }
+
+  .social-links path {
+    transition: fill 0.3s ease;
+    fill: var(--gray-400);
+  }
+
+  .social-links a:hover svg path {
+    fill: var(--gray-900);
+  }
+
+  @media screen and (max-width: 650px) {
+    .content {
+      flex-direction: column;
+      width: max-content;
+    }
+
+    .divider {
+      height: 1px;
+      width: 100%;
+      background: var(--red-to-pink-to-purple-horizontal-gradient);
+      margin-block: 1.5rem;
+    }
+  }
+
+==== Content of: ./playground/static/css/global.css ====
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Clean and professional font */
+    background-color: #121212 !important; /* Dark background for the entire page */
+    color: #ffffff; /* White text for contrast */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .container {
+    max-width: 1200px; /* Center container for content */
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  button {
+    font-family: inherit;
+  }
+
+  .nga-nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.nga-nav-link:hover {
+    color: grey;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.nga-navbar {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 11px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 11px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: black;
+}
+
+.nga-logo {
+    font-weight: 500;
+}
+
+.nga-logo:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nga-btn-navbar {
+    color: black;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: white;
+    --bs-btn-border-color: white;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: grey;
+    --bs-btn-hover-border-color: grey;
+}
+==== Content of: ./playground/static/css/header.css ====
+.nga-nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.nga-nav-link:hover {
+    color: grey;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.nga-navbar {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 11px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 11px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: black;
+}
+
+.nga-logo {
+    font-weight: 500;
+}
+
+.nga-logo:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nga-btn-navbar {
+    color: black;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: white;
+    --bs-btn-border-color: white;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: grey;
+    --bs-btn-hover-border-color: grey;
+}
+==== Content of: ./playenv ====
+

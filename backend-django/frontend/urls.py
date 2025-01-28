@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
     # Hoome page    
-    path('', views.index)
+    path('', views.index, name='index'),
     
 ]   
