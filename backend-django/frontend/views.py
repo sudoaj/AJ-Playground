@@ -40,11 +40,31 @@ def index(request):
 
     context = {
         "technologies": [
-            {"name": "Python", "url": "https://www.python.org/", "icon": "bi bi-file-code-fill"},
-            {"name": "TypeScript", "url": "https://www.typescriptlang.org/", "icon": "bi bi-code-square"},
-            {"name": "Docker", "url": "https://www.docker.com/", "icon": "bi bi-box-seam"},
-            {"name": "AWS", "url": "https://aws.amazon.com/", "icon": "bi bi-cloud-fill"},
-            {"name": "Code", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide", "icon": "bi bi-braces"},
+            {
+                "name": "Python",
+                "url": "https://www.python.org/",
+                "icon": "bi bi-file-code-fill",
+            },
+            {
+                "name": "TypeScript",
+                "url": "https://www.typescriptlang.org/",
+                "icon": "bi bi-code-square",
+            },
+            {
+                "name": "Docker",
+                "url": "https://www.docker.com/",
+                "icon": "bi bi-box-seam",
+            },
+            {
+                "name": "AWS",
+                "url": "https://aws.amazon.com/",
+                "icon": "bi bi-cloud-fill",
+            },
+            {
+                "name": "Code",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                "icon": "bi bi-braces",
+            },
         ],
         "projects": [
             {"name": "Project A", "url": "#"},
@@ -59,7 +79,7 @@ def index(request):
             {"name": "Company D", "url": "#"},
         ],
         "current_year": datetime.now().year,
-        "app_name": "Playground 2.0",
+        "app_name": "Playground 2.0 Home",
         "app_website": "https://aj-playground.org",
     }
 
@@ -81,25 +101,31 @@ def index(request):
         },
     ]
     social_profiles = [
-            {
-                "url": "https://twitter.com/your-profile",
-                "icon": "bi bi-twitter",
-                "bg_color": "#1DA1F2",  # Twitter's color
-            },
-            {
-                "url": "https://youtube.com/your-profile",
-                "icon": "bi bi-youtube",
-                "bg_color": "#FF0000",  # YouTube's color
-            },
-            {
-                "url": "https://instagram.com/your-profile",
-                "icon": "bi bi-instagram",
-                "bg_color": "#C13584",  # Instagram's color
-            },
-        ]
-
-
+        {
+            "url": "https://twitter.com/your-profile",
+            "icon": "bi bi-twitter",
+            "bg_color": "#1DA1F2",  # Twitter's color
+        },
+        {
+            "url": "https://youtube.com/your-profile",
+            "icon": "bi bi-youtube",
+            "bg_color": "#FF0000",  # YouTube's color
+        },
+        {
+            "url": "https://instagram.com/your-profile",
+            "icon": "bi bi-instagram",
+            "bg_color": "#C13584",  # Instagram's color
+        },
+    ]
 
     return render(
-        request, "frontend/index.html", {"projects": projects, "stats": stats,"blog_posts":blog_posts, "social_profiles": social_profiles, **context}
+        request,
+        "frontend/base.html",
+        {
+            "projects": projects,
+            "stats": stats,
+            "blog_posts": blog_posts,
+            "social_profiles": social_profiles,
+            **context,
+        },
     )

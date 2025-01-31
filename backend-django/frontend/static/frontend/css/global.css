@@ -20,3 +20,7 @@ body {
 .nga-nav-link:hover {
     color: grey;
 }
+
+.textCol{
+    color: black;
+}

@@ -1,5 +1,5 @@
 {% load static %}
-
+{% block footerCont %}
 <footer class="nga-footer bottom-0 w-100">
     <div class="container py-5 text-center text-lg-start">
       <div class="row">
@@ -24,6 +24,7 @@
           <hr class="text-white mb-4 mt-0 d-inline-block" style="width: 120px;">
           <ul class="list-unstyled">
             <!-- Loop through projects -->
+             <li><a href="/playground" class="text-decoration-none text-white">Playground</a></li>
             {% for project in projects %}
             <li><a href="{{ project.url }}" class="text-decoration-none text-white">{{ project.name }}</a></li>
             {% endfor %}
@@ -55,3 +56,4 @@
       </div>
     </div>
   </footer>
+{% endblock %}

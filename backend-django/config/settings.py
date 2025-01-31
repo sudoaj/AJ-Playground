@@ -37,10 +37,14 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-
-    'frontend',
-    'accounts',
 ]
+
+LOCAL_APPS = [
+    "frontend",
+    "accounts",
+]
+
+INSTALLED_APPS += LOCAL_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -52,12 +56,12 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "playground.urls"
+ROOT_URLCONF = "config.urls"
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "playground/templates"],
+        "DIRS": [BASE_DIR / "config/templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -70,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "playground.wsgi.application"
+WSGI_APPLICATION = "config.wsgi.application"
 
 
 # Database
@@ -120,13 +124,14 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 STATICFILES_DIRS = [
-    BASE_DIR / "playground/static",
+    BASE_DIR / "config/static",
+    BASE_DIR / "frontend/static/frontend"
 ]
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
-LOGIN_REDIRECT_URL = '/'  # Redirect to today's game
+LOGIN_REDIRECT_URL = '/'  
 
 
 # Default primary key field type
