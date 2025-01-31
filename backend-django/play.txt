@@ -1,0 +1,843 @@
+Adding content from: ./frontend/static/frontend/css/github.css
+===== ./frontend/static/frontend/css/github.css =====
+/* Shared Styles */
+.border-radius {
+    border-radius: 15px;
+}
+
+/* Section Styling */
+#github-section {
+    background-color: #121212;
+    padding: 50px 20px;
+    border-radius: 15px;
+}
+
+.github-table {
+    background-color: #1c1c1c;
+    padding: 20px;
+}
+
+table td {
+    vertical-align: middle;
+    padding: 10px;
+}
+
+table td:first-child {
+    width: 15%; /* Consider using flexbox or grid for better responsiveness */
+}
+
+table td:nth-child(2) {
+    width: 40%;
+}
+
+table td:nth-child(3),
+table td:nth-child(4) {
+    width: 20%;
+}
+
+table .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Stats Section */
+.github-stats {
+    background: linear-gradient(to right, #005bea, #00c6fb);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.github-stats div {
+    text-align: center;
+}
+
+.github-stats h4 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.github-stats p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+Adding content from: ./frontend/static/frontend/css/global.css
+===== ./frontend/static/frontend/css/global.css =====
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    overflow-x: hidden;
+}
+
+.nga-navbar {
+    background-color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+}
+
+.nga-nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.nga-nav-link:hover {
+    color: grey;
+}
+
+.textCol{
+    color: black;
+}
+
+
+Adding content from: ./frontend/static/frontend/css/jumbo.css
+===== ./frontend/static/frontend/css/jumbo.css =====
+#jumbo-section {
+    width: 100%; /* Use full width of the container */
+    max-width: 1200px; /* Limit the maximum width for larger screens */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 50px 20px; /* Maintain consistent padding */
+    background-color: #000;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #005bea, #00c6fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.thought-bubble {
+    position: absolute;
+    max-width: 250px;
+    right: -30px;
+    top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bubble-text {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.explore-button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #005bea;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #004bbd;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    #jumbo-section {
+        padding: 30px 15px; /* Reduce padding for smaller screens */
+    }
+
+    .thought-bubble {
+        right: 0; /* Adjust position of the bubble */
+        top: 10px;
+    }
+
+    .explore-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+
+Adding content from: ./frontend/static/frontend/css/main.css
+===== ./frontend/static/frontend/css/main.css =====
+:host {
+    --gradient-vertical: linear-gradient(180deg, #FF4500 0%, #FF69B4 50%, #8A2BE2 100%);
+    --gradient-horizontal: linear-gradient(90deg, #FF4500 0%, #FF69B4 50%, #8A2BE2 100%);
+
+    --gray-900: #333;
+    --gray-700: #666;
+    --gray-400: #CCC;
+
+    font-family: "Inter", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.pill {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    background: var(--gray-700);
+    color: white;
+}
+
+
+Adding content from: ./frontend/static/frontend/css/follow.css
+===== ./frontend/static/frontend/css/follow.css =====
+
+.rounded-circle {
+    
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rounded-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+
+Adding content from: ./frontend/static/frontend/css/header.css
+===== ./frontend/static/frontend/css/header.css =====
+.nga-nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.nga-nav-link:hover {
+    color: grey;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.nga-navbar {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 11px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 11px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: black;
+}
+
+.nga-logo {
+    font-weight: 500;
+}
+
+.nga-logo:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nga-btn-navbar {
+    color: black;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: white;
+    --bs-btn-border-color: white;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: grey;
+    --bs-btn-hover-border-color: grey;
+}
+
+
+Adding content from: ./frontend/static/frontend/css/blog.css
+===== ./frontend/static/frontend/css/blog.css =====
+#blog-section {
+    background-color: #000;
+    padding: 50px 20px;
+    border-radius: 15px;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.blog-card {
+    height: 300px;
+    position: relative;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.blog-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.blog-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.blog-date {
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+    margin-top: 20px;
+}
+
+.pagination-btn {
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.pagination-btn:hover {
+    background-color: #333;
+    color: #00c6fb;
+    border-color: #00c6fb;
+    transform: scale(1.1);
+}
+
+.pagination-btn i {
+    font-size: 1.2rem;
+}
+
+
+Adding content from: ./frontend/static/frontend/css/footer.css
+===== ./frontend/static/frontend/css/footer.css =====
+.nga-footer {
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  .nga-footer h2 {
+    color: #00c6fb;
+  }
+  
+  .nga-btn-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .nga-btn-social:hover {
+    background-color: #444;
+    color: #00c6fb;
+    transform: translateY(-2px);
+  }
+  
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  ul li a:hover {
+    color: #00c6fb;
+    text-decoration: underline;
+  }
+
+
+Adding content from: ./frontend/templates/frontend/blog.html
+===== ./frontend/templates/frontend/blog.html =====
+{% load static %}
+
+<div id="blog-section" class="container py-5">
+    <h2 class="text-white mb-4">Blog</h2>
+    <div class="row justify-content-center">
+        {% for post in blog_posts %}
+        <div class="col-md-4">
+            <div class="blog-card" style="background: url('{% static post.image_url %}') no-repeat center center; background-size: cover;">
+
+                <div class="blog-content">
+                    <p class="blog-title">{{ post.title }}</p>
+                    <p class="blog-date">{{ post.published_date|date:"Y" }}</p>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p class="text-center text-white">No blog posts available at the moment.</p>
+        {% endfor %}
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination-controls mt-4 d-flex justify-content-center align-items-center">
+        {% if blog_posts.has_previous %}
+            <a href="?page={{ blog_posts.previous_page_number }}" class="btn pagination-btn me-2">
+                <i class="bi bi-chevron-left"></i>
+            </a>
+        {% endif %}
+        {% if blog_posts.has_next %}
+            <a href="?page={{ blog_posts.next_page_number }}" class="btn pagination-btn">
+                <i class="bi bi-chevron-right"></i>
+            </a>
+        {% endif %}
+    </div>
+</div>
+
+
+Adding content from: ./frontend/templates/frontend/index.html
+===== ./frontend/templates/frontend/index.html =====
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}{{app_name}}{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <!-- Jumbo Section -->
+    <section id="jumbo-section" class="mb-5">
+        {% include "jumbo.html" %}
+    </section>
+
+
+</div>
+{% endblock %}
+
+
+Adding content from: ./frontend/templates/frontend/github.html
+===== ./frontend/templates/frontend/github.html =====
+{% load static %}
+
+<div class="container py-5" id="github-section">
+    <h2 class="text-white mb-4">Projects (GitHub API)</h2>
+    
+    <!-- Table Section -->
+    <div class="github-table bg-dark text-white rounded p-4 shadow-lg">
+        <table class="table table-borderless text-white">
+            <tbody>
+                <p>Projects Count: {{ projects|length }}</p>
+                {% for project in projects %}
+                <tr>
+                    <td class="fw-bold">{{ project.name }}</td>
+                    <td class="text-muted">{{ project.description }}</td>
+                    <td>
+                        <div class="d-flex flex-column">
+                            <span class="small">{{ project.created_at|date:"F d, Y" }}</span>
+                            <span class="small">{{ project.updated_at|date:"F d, Y" }}</span>
+                        </div>
+                    </td>
+                    <td class="text-muted">{{ project.technologies|join:" / " }}</td>
+                    <td>
+                        <a href="{{ project.github_url }}" class="btn btn-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" target="_blank">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="5" class="text-center">No projects found.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="github-stats bg-gradient-to-right text-white rounded mt-4 p-4 d-flex justify-content-around shadow-lg">
+        <div class="text-center">
+            <h4 class="fw-bold mb-0">{{ stats.projects_count }}</h4>
+            <p class="small text-uppercase">Projects</p>
+        </div>
+        <div class="text-center">
+            <h4 class="fw-bold mb-0">{{ stats.languages_count }}</h4>
+            <p class="small text-uppercase">Languages</p>
+        </div>
+        <div class="text-center">
+            <h4 class="fw-bold mb-0">{{ stats.frameworks_count }}</h4>
+            <p class="small text-uppercase">Frameworks</p>
+        </div>
+        <div class="text-center">
+            <h4 class="fw-bold mb-0">{{ stats.live_projects_count }}</h4>
+            <p class="small text-uppercase">Live Projects</p>
+        </div>
+    </div>
+</div>
+
+
+Adding content from: ./frontend/templates/frontend/base.html
+===== ./frontend/templates/frontend/base.html =====
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}{{app_name}}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/global.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/header.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/jumbo.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/github.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/blog.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/follow.css'%}" />
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    {% block extra_head %}{% endblock %}
+  </head>
+  <body>
+    <!-- Header Section -->
+    {% include "frontend/header.html" %}
+
+    <!-- Main Container -->
+     <h1 class"textCol">Base Template</h1>
+    <main class="container py-5">{% block content %}{% endblock %}</main>
+    <!-- Footer Section -->
+    {% include "frontend/footer.html" %} {% block scripts %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    {% endblock %}
+  </body>
+</html>
+
+
+
+Adding content from: ./frontend/templates/frontend/jumbo.html
+===== ./frontend/templates/frontend/jumbo.html =====
+{% load static %}
+
+<div class="container py-5 text-white" id="jumbo-section">
+    <div class="row align-items-center">
+        <!-- Left Section -->
+        <div class="col-md-6 text-start">
+            <h1 class="fw-bold display-3">
+                Hi, I'm <span class="text-gradient">{{ user_name }}</span>
+            </h1>
+            <p class="fs-4 mt-3">{{ welcome_message }}</p>
+            <a href="/" class="btn btn-primary btn-lg explore-button mt-4">Explore</a>
+        </div>
+
+        <!-- Right Section: Middle and Chat -->
+        <div class="col-md-6">
+            <div class="row">
+                <!-- Middle Section -->
+                <div class="col-12 position-relative mb-4">
+                    <!-- Profile Image -->
+                    <img src="{% static 'frontend/images/me.png' %}" alt="{{ user_name }}" class="img-fluid rounded-circle shadow-lg" style="max-width: 300px;">
+
+                    <!-- Thought Bubble -->
+                    <div class="thought-bubble position-absolute" style="top: 0; right: 0;">
+                        <div class="bubble-text bg-white text-dark rounded p-3 shadow">
+                            <p class="mb-0">
+                                {{ thought_message }}
+                            </p>
+                        </div>
+                        <!-- Small connecting dots -->
+                        <div class="bubble-dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Section -->
+                <div class="col-12">
+                    <div class="chat-section bg-dark text-white rounded p-4 shadow">
+                        <h4 class="fw-bold mb-3">AJ-GPT</h4>
+
+                        <!-- Chat Messages -->
+                        <div class="chat-messages mb-4">
+                            {% for message in chat_messages %}
+                                <p class="chat-message">{{ message }}</p>
+                            {% empty %}
+                                <p class="chat-message">No messages yet.</p>
+                            {% endfor %}
+                        </div>
+
+                        <!-- Input Section -->
+                        <div class="input-group chat-input">
+                            <!-- Image Upload -->
+                            <button class="btn btn-secondary">
+                                <i class="bi bi-image"></i>
+                            </button>
+                            <!-- Model Change -->
+                            <select class="form-select model-select">
+                                <option selected>Default Model</option>
+                                <option value="1">Model A</option>
+                                <option value="2">Model B</option>
+                            </select>
+
+                            <!-- Text Input -->
+                            <input type="text" class="form-control" placeholder="Type your message..." />
+                            <!-- Microphone -->
+                            <button class="btn btn-secondary">
+                                <i class="bi bi-mic"></i>
+                            </button>
+                            <!-- Send Button -->
+                            <button class="btn btn-primary">
+                                <i class="bi bi-send"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+Adding content from: ./frontend/templates/frontend/footer.html
+===== ./frontend/templates/frontend/footer.html =====
+{% load static %}
+{% block footerCont %}
+<footer class="nga-footer bottom-0 w-100">
+    <div class="container py-5 text-center text-lg-start">
+      <div class="row">
+        <!-- Technologies Section -->
+        <div class="col-12 col-lg-4 mb-3">
+          <h2 class="h5">Technologies</h2>
+          <hr class="text-white mb-4 mt-0 d-inline-block" style="width: 120px;">
+          <div class="d-flex flex-wrap gap-3">
+            <!-- Loop through technologies -->
+            {% for tech in technologies %}
+            <a type="button" class="nga-btn-social text-decoration-none text-white"
+              href="{{ tech.url }}" aria-label="{{ tech.name }}">
+              <i class="{{ tech.icon }}"></i> {{ tech.name }}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+  
+        <!-- Projects Section -->
+        <div class="col-12 col-lg-4 mb-3">
+          <h2 class="h5">Projects</h2>
+          <hr class="text-white mb-4 mt-0 d-inline-block" style="width: 120px;">
+          <ul class="list-unstyled">
+            <!-- Loop through projects -->
+             <li><a href="/playground" class="text-decoration-none text-white">Playground</a></li>
+            {% for project in projects %}
+            <li><a href="{{ project.url }}" class="text-decoration-none text-white">{{ project.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+  
+        <!-- Companies Section -->
+        <div class="col-12 col-lg-4 mb-3">
+          <h2 class="h5">Companies</h2>
+          <hr class="text-white mb-4 mt-0 d-inline-block" style="width: 120px;">
+          <ul class="list-unstyled">
+            <!-- Loop through companies -->
+            {% for company in companies %}
+            <li><a href="{{ company.url }}" class="text-decoration-none text-white">{{ company.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <div class="py-3 text-center" style="background-color: black;">
+      <div class="container text-white">
+        <p class="mb-2">
+          &copy; {{ current_year }} {{ app_name }}. All rights reserved.
+        </p>
+        <a href="{{ app_website }}" class="text-decoration-none text-white">
+          {{ app_website }}
+        </a>
+      </div>
+    </div>
+  </footer>
+{% endblock %}
+
+
+Adding content from: ./frontend/templates/frontend/header.html
+===== ./frontend/templates/frontend/header.html =====
+{% load static %}
+<header class="navbar navbar-expand-lg navbar-dark fixed-top nga-navbar">
+  <nav class="container" aria-label="Main navigation">
+    <a href="/" class="navbar-brand" alt="Home - {{ app_name }}">
+      <img
+        src="{% static 'frontend/images/logo.png' %}"
+        srcset="{% static 'images/logo.png' %}, {% static 'images/logo.png' %}"
+        width="25"
+        height="25"
+        alt="{{ app_name }} Logo"
+      />
+      <span class="nga-logo mx-1" aria-label="{{ app_name }}"
+        >AJ Playground</span
+      {% comment %} <span class="nga-logo mx-1" aria-label="{{ app_name }}"
+        >{{ app_name }}</span {% endcomment %}
+      >
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link nga-nav-link" href="/">
+            <i class="fab fa-angular me-1"></i>Resume
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link nga-nav-link"
+            href="https://github.com/{{ app_github }}"
+          >
+            <i class="fab fa-github me-1"></i>GitHub
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link nga-nav-link"
+            href="https://medium.com/@salamajayi1"
+          >
+            <i class="far fa-question-circle me-1"></i>Blog
+          </a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <a class="btn btn-sm nga-btn-navbar me-2" href="{% url 'register' %}">
+          <i class="bi bi-person-plus me-2"></i>Sign up
+        </a>
+        <a class="btn btn-sm btn-outline-light me-2" href="{% url 'login' %}">
+          <i class="bi bi-box-arrow-in-right me-2"></i>Login
+        </a>
+      </form>
+    </div>
+  </nav>
+</header>
+
+
+
+Adding content from: ./frontend/templates/frontend/follow.html
+===== ./frontend/templates/frontend/follow.html =====
+{% load static %}
+
+<div class="container py-5 text-center">
+    <h3 class="fw-bold mb-4">Follow Me...</h3>
+  
+    <!-- Social Media Icons -->
+    <div class="d-flex justify-content-center gap-4">
+        {% for profile in social_profiles %}
+        <a href="{{ profile.url }}" target="_blank" class="text-decoration-none">
+            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; background-color: {{ profile.bg_color }};">
+                <i class="{{ profile.icon }} text-white fs-3"></i>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+
+Adding content from: ./accounts/templates/accounts/register.html
+===== ./accounts/templates/accounts/register.html =====
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Register</h1>
+<button type="submit">Register</button>
+{% endblock %}
+
+
+Adding content from: ./accounts/templates/accounts/login.html
+===== ./accounts/templates/accounts/login.html =====
+{% extends "frontend/base.html" %}
+{% load static %}
+
+<div class="login-container">
+    <div class="login-box">
+        <h2 class="text-center">Welcome Back</h2>
+        <p class="text-center text-muted">Please login to your account</p>
+
+        <form method="POST">
+            {% csrf_token %}
+            
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="username" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Error Messages -->
+            {% if messages %}
+                <div class="alert alert-danger mt-3">
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            <!-- Login Button -->
+            <button type="submit" class="btn btn-primary btn-block mt-3">Login</button>
+
+            <!-- Forgot Password -->
+            <div class="text-center mt-3">
+                <a href="{% url 'password_reset' %}" class="text-muted">Forgot Password?</a>
+            </div>
+
+            <!-- Register Link -->
+            <div class="text-center mt-3">
+                <p class="text-muted">Don't have an account? <a href="{% url 'register' %}">Register</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
